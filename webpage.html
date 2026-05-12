@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semantic HTML Tags Demo</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f4f4f4;
+    }
+
+    header, nav, main, section, article, aside, footer {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+
+    header {
+      background: #0077cc;
+      color: white;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    main {
+      display: flex;
+      gap: 10px;
+    }
+
+    section {
+      background: white;
+      flex: 3;
+    }
+
+    article {
+      background: #e9f5ff;
+      margin-top: 10px;
+    }
+
+    aside {
+      background: #ffe9c7;
+      flex: 1;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+    }
+
+    figure {
+      margin: 0;
+    }
+
+    figcaption {
+      font-size: 14px;
+      color: #555;
+    }
+
+    details {
+      margin-top: 10px;
+      background: #fff3cd;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    mark {
+      background: yellow;
+    }
+
+    time {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Semantic HTML5 Webpage</h1>
+    <p>This page demonstrates semantic HTML tags.</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Section -->
+    <section>
+
+      <h2>Main Section</h2>
+
+      <!-- Article -->
+      <article>
+        <header>
+          <h3>Article Title</h3>
+          <p>Published on <time datetime="2026-05-12">May 12, 2026</time></p>
+        </header>
+
+        <p>
+          This is an example of an <mark>HTML semantic webpage</mark>.
+        </p>
+
+        <!-- Figure -->
+        <figure>
+          <img 
+            src="https://via.placeholder.com/400x200" 
+            alt="Placeholder Image"
+          />
+          <figcaption>Example Figure with Caption</figcaption>
+        </figure>
+
+        <!-- Details -->
+        <details>
+          <summary>Read More</summary>
+          <p>
+            Semantic tags improve accessibility, SEO, and readability.
+          </p>
+        </details>
+
+        <!-- Footer inside article -->
+        <footer>
+          <p>Written by John Doe</p>
+        </footer>
+      </article>
+
+    </section>
+
+    <!-- Aside -->
+    <aside>
+      <h3>Sidebar</h3>
+      <p>This is additional related information.</p>
+
+      <address>
+        Contact us at:<br />
+        example@email.com
+      </address>
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Semantic HTML Demo | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
