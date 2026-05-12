@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Registration Form</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#6a11cb,#2575fc);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            min-height:100vh;
+            padding:20px;
+        }
+
+        .container{
+            background:#fff;
+            width:500px;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:20px;
+            color:#333;
+        }
+
+        .form-group{
+            margin-bottom:15px;
+        }
+
+        label{
+            display:block;
+            margin-bottom:5px;
+            color:#555;
+            font-weight:bold;
+        }
+
+        input,
+        select,
+        textarea{
+            width:100%;
+            padding:10px;
+            border:1px solid #ccc;
+            border-radius:5px;
+            font-size:14px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus{
+            border-color:#2575fc;
+            outline:none;
+        }
+
+        .gender{
+            display:flex;
+            gap:15px;
+            margin-top:5px;
+        }
+
+        .gender label{
+            font-weight:normal;
+        }
+
+        .checkbox{
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        .checkbox input{
+            width:auto;
+        }
+
+        textarea{
+            resize:none;
+        }
+
+        .btn{
+            width:100%;
+            background:#2575fc;
+            color:#fff;
+            border:none;
+            padding:12px;
+            font-size:16px;
+            border-radius:5px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#1a5ed9;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form>
+
+        <!-- Full Name -->
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter email" required>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+        </div>
+
+        <!-- Phone -->
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter phone number">
+        </div>
+
+        <!-- Date -->
+        <div class="form-group">
+            <label>Date of Birth</label>
+            <input type="date">
+        </div>
+
+        <!-- Gender -->
+        <div class="form-group">
+            <label>Gender</label>
+
+            <div class="gender">
+                <label>
+                    <input type="radio" name="gender"> Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender"> Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender"> Other
+                </label>
+            </div>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="form-group">
+            <label>Country</label>
+
+            <select>
+                <option>Select Country</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>Australia</option>
+            </select>
+        </div>
+
+        <!-- File Upload -->
+        <div class="form-group">
+            <label>Upload Profile Picture</label>
+            <input type="file">
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label>Address</label>
+            <textarea rows="4" placeholder="Enter your address"></textarea>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group checkbox">
+            <input type="checkbox" required>
+            <label>I accept the Terms & Conditions</label>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn">Register</button>
+
+    </form>
+</div>
+
+</body>
+</html>
